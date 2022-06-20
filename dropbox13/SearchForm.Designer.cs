@@ -39,6 +39,7 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.printButton = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +134,7 @@
             this.closeButton.TabIndex = 4;
             this.closeButton.Text = "&Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // printButton
             // 
@@ -142,6 +144,11 @@
             this.printButton.TabIndex = 5;
             this.printButton.Text = "&Print";
             this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // SearchForm
             // 
@@ -176,5 +183,6 @@
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button printButton;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

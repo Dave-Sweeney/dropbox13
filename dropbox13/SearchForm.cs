@@ -54,5 +54,28 @@ namespace dropbox13
                 gradeLabel.Text = String.Empty;
             }
         }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            printDocument1.Print();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Student ID: " + idLabel.Text,
+                new Font("Courier New", 12, FontStyle.Regular),
+                Brushes.Black, 100, 200);
+            e.Graphics.DrawString("Student Name: " + nameLabel.Text,
+                new Font("Courier New", 12, FontStyle.Regular),
+                Brushes.Black, 100, 215);
+            e.Graphics.DrawString("Student Grade: " + gradeLabel.Text,
+                new Font("Courier New", 12, FontStyle.Regular),
+                Brushes.Black, 100, 230);
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

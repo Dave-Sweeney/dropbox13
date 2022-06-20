@@ -37,5 +37,10 @@ namespace dropbox13
             SearchForm searchForm = new SearchForm();
             searchForm.ShowDialog();
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
