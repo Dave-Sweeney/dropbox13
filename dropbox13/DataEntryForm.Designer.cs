@@ -112,6 +112,7 @@
             this.saveButton.TabIndex = 6;
             this.saveButton.Text = "&Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // clearButton
             // 
@@ -121,6 +122,7 @@
             this.clearButton.TabIndex = 7;
             this.clearButton.Text = "&Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -130,6 +132,7 @@
             this.exitButton.TabIndex = 8;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // DataEntryForm
             // 
