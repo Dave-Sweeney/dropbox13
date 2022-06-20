@@ -16,7 +16,7 @@ namespace dropbox13
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataEntryForm());
+            Application.Run(new MainForm());
         }
     }
 }
