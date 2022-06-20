@@ -53,6 +53,7 @@
             this.addButton.TabIndex = 1;
             this.addButton.Text = "&Add";
             this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // displayButton
             // 
@@ -62,6 +63,7 @@
             this.displayButton.TabIndex = 2;
             this.displayButton.Text = "&Display";
             this.displayButton.UseVisualStyleBackColor = true;
+            this.displayButton.Click += new System.EventHandler(this.displayButton_Click);
             // 
             // searchButton
             // 
@@ -71,6 +73,7 @@
             this.searchButton.TabIndex = 3;
             this.searchButton.Text = "&Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // exitButton
             // 

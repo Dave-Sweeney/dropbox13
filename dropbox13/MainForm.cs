@@ -16,5 +16,26 @@ namespace dropbox13
         {
             InitializeComponent();
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            // Create an instance of DataEntryForm
+            DataEntryForm entryForm = new DataEntryForm();
+            // call the ShowDialog() method of DataEntryForm
+            entryForm.ShowDialog();
+        }
+
+        private void displayButton_Click(object sender, EventArgs e)
+        {
+            // Create an instance of DisplayForm
+            DisplayForm displayForm = new DisplayForm();
+            displayForm.ShowDialog();
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            SearchForm searchForm = new SearchForm();
+            searchForm.ShowDialog();
+        }
     }
 }
